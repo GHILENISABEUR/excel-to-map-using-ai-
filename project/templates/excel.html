@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel</title>
+    <style>
+        h1 {
+            color: green;         
+            font-size: 25px;  
+            font-weight: bold;     
+        }
+    </style>
+</head>
+<body>
+    <h1>GeeksforGeeks</h1> 
+ 
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h4>Select & Upload File</h4> 
+        <input type="file" required name="files"> 
+        <button type="submit">Submit</button> 
+    </form>
+ 
+    {% if data_to_display %}
+    <div>
+        <h2>Uploaded Data</h2>
+        {{ data_to_display | safe }} 
+    </div>
+    {% endif %}
+</body>
+</html>

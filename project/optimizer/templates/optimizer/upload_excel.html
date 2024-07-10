@@ -1,0 +1,29 @@
+<!-- upload_excel.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Excel</title>
+</head>
+<body>
+    <h2>Upload Excel File</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="excel_file" accept=".xls,.xlsx">
+        <button type="submit">Upload</button>
+    </form>
+    <br>
+    {% if uploaded_file_url %}
+        <p>Uploaded Excel file: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
+    {% endif %}
+
+    <!-- Display maps -->
+    {% if maps %}
+        {% for map_url in maps %}
+            <iframe src="{{ map_url }}" width="100%" height="500px"></iframe>
+            <br>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>
