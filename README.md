@@ -54,8 +54,7 @@ Notes:
 Update the Installation and Usage sections with specific instructions if there are additional setup steps or special considerations.
 Include screenshots or examples of mapped output if applicable, to visually demonstrate the project's functionality.
 This README template should provide a solid foundation for users and contributors to understand and engage with your project effectively. Adjust the content and structure as needed to best fit the specifics of your project and its intended audience.
-#WHEN I DEVELOPPED THIS THE ONLY ONES WHO KNOWS HOW IT WORKS IS ME AND GOD I HONSTLY FOR NOW ONLY GOD KNOWS 
-QUICK REMINDER
+#WHEN I DEVELOPPED THIS THE ONLY ONES WHO KNOWS HOW IT WORKS IS ME AND GOD and  HONSTLY FOR NOW ONLY GOD KNOWS 
 
 
 
